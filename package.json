@@ -22,7 +22,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "canadarm": "^1.0.2",
+    "cerner-smart-embeddable-lib": "^1.1.0",
     "classnames": "^2.2.5",
     "jquery": "^3.1.1",
     "react": "^15.4.1",
@@ -70,7 +72,7 @@
     "terra-toolkit": "^1.2.0",
     "uglify-js": "^2.8.11",
     "url-loader": "^0.5.8",
-    "webpack": "2.7.0",
+    "webpack": "^2.7.0",
     "webpack-dev-server": "^2.9.2"
   },
   "repository": {

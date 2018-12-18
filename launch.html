@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" hidden>
   <head>
     <meta charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,16 +8,20 @@
     <link rel='stylesheet' type='text/css' href='app/reset.css'>
     <link rel='stylesheet' type='text/css' href='app/loading-indicator.css'>
     <script src='lib/fhir-client.min.js'></script>
+	<link rel='stylesheet' type='text/css' href='lib/cerner-smart-embeddable-lib-1.0.0.min.css'>
   </head>
   <body>
     <div id='loadingIndicator' class='loading-indicator'>
+	
       <div class='bounce1'></div>
       <div class='bounce2'></div>
       <div class='bounce3'></div>
     </div>
+	<script src='lib/polyfill.min.js'></script>
+	<script src='lib/cerner-smart-embeddable-lib-1.0.0.min.js'></script>
     <script>
       FHIR.oauth2.authorize({
-        'client_id': 'my_web_app',
+        'client_id': '6d32d057-259a-482d-8fd2-8faec463f406',
         'scope': 'patient/Patient.read patient/Observation.read launch online_access openid profile'
       });
     </script>
